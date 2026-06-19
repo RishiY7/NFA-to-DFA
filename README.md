@@ -1,5 +1,12 @@
 # NFA to DFA Converter
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![D3.js](https://img.shields.io/badge/d3%20js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+
+**[🚀 Try the Live Demo Here!](https://rishiy7.github.io/NFA-to-DFA/)**
+
 A visual tool for converting Non-Deterministic Finite Automata (NFA) to Deterministic Finite Automata (DFA). This tool provides an interactive graphical interface to visualize state transitions and understand the subset construction algorithm step-by-step.
 
 This implementation was done by [Rishi Yadav](https://github.com/RishiY7/NFA-to-DFA).
