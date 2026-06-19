@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>NFA to DFA Conversion - BCS503</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/dagre-d3@0.6.4/dist/dagre-d3.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+<header>
+<div class="brand">
+  <div>
+    <h1>NFA to DFA Conversion - BCS503</h1>
+    <div class="subtitle">Implementation done by Rishi Yadav (<a href="https://github.com/RishiY7/NFA-to-DFA" target="_blank" style="color: inherit; text-decoration: underline;">https://github.com/RishiY7/NFA-to-DFA</a>)</div>
+  </div>
+</div>
+</header>
+
+<div class="instructions">
+<strong>Input:</strong> states | start | finals | transitions (FROM,SYMBOL,TO). Example: A,B,C → A → C → A,0,A …
+</div>
+
+<div class="top-controls">
+  <div class="card">
+    <textarea id="nfaInput" spellcheck="false">
+A,B,C
+A
+C
+A,0,A
+A,1,B
+A,0,C
+B,0,C
+C,0,C
+C,1,C
+    </textarea>
+    <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn" onclick="generateNFA()">Generate NFA</button>
+      <button class="btn" onclick="convertToDFA()">Convert to DFA</button>
+      <div class="status" id="statusText">Ready</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="panel-title"><h3>Conversion Steps</h3></div>
+    <div id="conversionSteps">Steps will appear here after converting to DFA.</div>
+  </div>
+</div>
+
+<div class="main">
+<div class="card">
+  <div class="panel-title"><h3>NFA Diagram</h3></div>
+  <svg id="nfaSVG"></svg>
+  <div id="nfaTable"></div>
+</div>
+
+<div class="card">
+  <div class="panel-title"><h3>DFA Diagram</h3></div>
+  <svg id="dfaSVG"></svg>
+  <div id="dfaTable"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
