@@ -4,6 +4,11 @@ A visual tool for converting Non-Deterministic Finite Automata (NFA) to Determin
 
 This implementation was done by [Rishi Yadav](https://github.com/RishiY7/NFA-to-DFA).
 
+## 🏆 Achievements
+
+**🥇 1st Prize Winner!**  
+Check out my LinkedIn post about winning first prize for this project: [View Post on LinkedIn](https://www.linkedin.com/posts/rishiyadav7_toc-theoryofcomputation-nfa-activity-7401497826871910400-SdN_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFONewoBB8xsSNGZK-xZh8zB2VJnGRGgEEU)
+
 ## Features
 
 - **Interactive Graphs**: Visualizes the NFA and DFA graphs using `d3.js` and `dagre-d3`.
